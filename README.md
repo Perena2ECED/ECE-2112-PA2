@@ -61,8 +61,22 @@ sequence of random numbers.
   ```
 
   # B. CUBES DIVISIBLE BY 4
-  The problem asks to create the first 100 positive integers, cube each element, and reshape the result into a 10 x 10 matrix. Ensure that it displays the shape of C,
-  the array div_by_4, and the total number of selected elements, which is 50, and making the first and last element, 8 and 1 000 000, respectively.
+  The problem asks to create the first 100 positive integers, cube each element, and reshape the result into a 10 x 10 matrix. Ensure that it displays   the shape of C, the array div_by_4, and the total number of selected elements (50), and that the first and last elements are 8 and 1 000 000,          respectively.
+
+  * The functions were called using an arbitrary variable 'C' as it is asked by the problem.
+ 
+  * The `C = np.arange(1, 101)` is used as the problem requires the initialization of an ordered sequence of numbers. The `arange(0` is a function         that generates a one-dimensional array from the inclusive lower bound of 1 to its exclusive upper bound of 101. This function evaluates 100            consecutive integers from 1 to 100 and assigns them to the arbitrary variable C.
+    ```
+    C = np.arange(1, 101)
+    C
+
+    This evaluates to an array of values from 1 to 100.
+    ```
+
+  * The `C = C**3` 
+  
+
+  
   
 
   
