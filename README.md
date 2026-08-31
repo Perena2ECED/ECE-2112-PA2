@@ -65,9 +65,9 @@ sequence of random numbers.
   displays the shape of C, the array div_by_4, and the total number of selected elements (50), and that the first and last elements are 8 and
   1 000 000, respectively.
 
-  * The functions were called using an arbitrary variable 'C' as it is asked by the problem.
+* The functions were called using an arbitrary variable 'C' as it is asked by the problem.
  
-  * The `C = np.arange(1, 101)` is used as the problem requires the initialization of an ordered sequence of numbers. The `.arange()` is a function         that generates a one-dimensional array from the inclusive lower bound of 1 to its exclusive upper bound of 101. This function evaluates 100            consecutive integers from 1 to 100 and assigns them to the arbitrary variable C.
+* The `C = np.arange(1, 101)` is used as the problem requires the initialization of an ordered sequence of numbers. The `.arange()` is a function         that generates a one-dimensional array from the inclusive lower bound of 1 to its exclusive upper bound of 101. This function evaluates 100            consecutive integers from 1 to 100 and assigns them to the arbitrary variable C.
     ```
     C = np.arange(1, 101)
     C
@@ -75,7 +75,7 @@ sequence of random numbers.
     This evaluates to an array of values from 1 to 100.
     ```
 
-  * The `C = C**3` is used to perform the problem requirement to create data in its cube form. The syntax applies an element-wise cubic                    transformation, cubing each number inside the array natively. The cube's values transformed the array, having 1 as the smallest and
+* The `C = C**3` is used to perform the problem requirement to create data in its cube form. The syntax applies an element-wise cubic                    transformation, cubing each number inside the array natively. The cube's values transformed the array, having 1 as the smallest and
     1 000 000 is the largest.
     ```
     C = C**3
@@ -119,11 +119,57 @@ sequence of random numbers.
 
   50
   ```
-  
+
+# C. Above-Mean Squares Problem
+The problem asks for a 6 x 6 matrix, called under an arbitrary variable S, containing the squares of the first 36 positive integers in increasing order. It also asks to compute the mean and use a boolean to filter for elements greater than the mean.
+
+* The `S = np.arange (1, 37)` is used because the problem required initializing an ordered sequence of numbers. The `.arange()` function generates a one-dimensional array from the first inclusive value (lower bound) of 1 to the last exclusive value (upper bound) of 37. This evaluates to a vector containing exactly 36 consecutive integers ranging from 1 to 36 declared in the arbitrary variable S.
+  ```
+  S = np.arange(1, 37)
+  S
+
+  This evaluates to an array ranging from 1 to 36.
+
+  ```
+
+* The `S = np.power(S, 2) is used because the problem requires transforming the data exponentially, which is why `.power()` is used as the syntax applies an element-wise transformation across the vector, raising each data point to the power of 2.
+  ```
+  S = np.power(S, 2)
+  S
+
+  This evaluates to the square of S.
+
+  ```
+
+* The `S = S.reshape(6, 6)` is used to change the spatial orientation of the data layout. The function reconfigures the first 36 positive integers into a two-dimensional grid without altering their sequence. The parameter `(6, 6)` is used to directly rearrange the values into a matrix with 6 rows and 6 columns into the arbitrary variable S.
+ ```
+  S = S.reshape(6, 6)
+  S
+
+  This evaluates to a 6 × 6 matrix of the squares of the first 36 positive integers.
+
+```
+
+* The ` S.shape` is used to verify whether the spatial dimensions applied were successfully altered. It is used to properly read out the array's structural dimensions as a tuple representing the 6 rows and 6 columns.
+  ```
+  S.shape
+
+  (6, 6)
+  ```
+
+* The `S_mean = np.mean(S)` is used  to find the baseline of the data or its average. The `.mean()` function adds the thirty-six individual integers and divides the sum by the total element count, and stores it under S_mean.
+  ```
+  S_mean = np.mean(S)
+  S_mean
+
+  450.1666666666667
+  ```
+
 
 # Version History
 
 * 30 August 2026 - The README repository was created, and the initial .ipynb file was uploaded.
+* 31 August 2026 - The README file is continuously being updated. 
     
   
 
