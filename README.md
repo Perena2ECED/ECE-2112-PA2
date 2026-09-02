@@ -285,7 +285,7 @@ sequence of random numbers.
        1089, 1156, 1225, 1296])
     ```
 
-* The `P3 = above_mean.size` is used to check the volume of filtered data points found. The '.size` property reads the total number of data points stored in an array from memory, regardless of its dimensionality or layout.
+* The `P3 = above_mean.size` is used to check the volume of filtered data points found. The `.size` property reads the total number of data points stored in an array from memory, regardless of its dimensionality or layout.
   
     ```
     P3 = above_mean.size
@@ -297,7 +297,9 @@ sequence of random numbers.
 
 * 30 August 2026 - The README repository was created, and the initial .ipynb file was uploaded.
 * 31 August 2026 - The README file is continuously being updated.
-* 01 September 2026 - The README file is still being updated, and the .ipynb file was uploaded.
+* 01 September 2026 - The README file is still being updated, and the final .ipynb file was uploaded.
+* 02 September 2026 - The README file is still being finalized.
+* 03 September 2026 - Final touches for the README file was done and it was submitted.
   
 
   
