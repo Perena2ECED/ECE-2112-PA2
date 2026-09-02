@@ -228,7 +228,7 @@ sequence of random numbers.
        35, 36])
     ```
 
-* The `S = np.power(S, 2) is used because the problem requires transforming the data exponentially, which is why `.power()` is used as the syntax applies an element-wise
+* The `S = np.power(S, 2)` is used because the problem requires transforming the data exponentially, which is why `.power()` is used as the syntax applies an element-wise
   transformation across the vector, raising each data point to the power of 2.
   
     ```
