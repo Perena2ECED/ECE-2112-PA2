@@ -97,7 +97,7 @@ sequence of random numbers.
     displays the shape of C, the array div_by_4, and the total number of selected elements (50), and that the first and last elements are 8 and
     1 000 000, respectively.
 
-* The functions were called using an arbitrary variable 'C' as it is asked by the problem.
+* The functions were called using an arbitrary variable `C` as it is asked by the problem.
  
 * The `C = np.arange(1, 101)` is used as the problem requires the initialization of an ordered sequence of numbers. The `.arange()` is a function
   that generates a one-dimensional array from the inclusive lower bound of 1 to its exclusive upper bound of 101. This function evaluates 100
@@ -118,7 +118,7 @@ sequence of random numbers.
     ```
 
 * The `C = C**3` is used to perform the problem requirement to create data in its cube form. The syntax applies an element-wise cubic
-  transformation, cubing each number inside the array natively. The cube's values transformed the array, having 1 as the smallest and
+  transformation, cubing each number inside the array. The cube's values transformed the array, having 1 as the smallest and
   1 000 000 is the largest.
   
     ```
